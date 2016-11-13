@@ -484,7 +484,7 @@ li.recentcomments {
   font-weight: 200;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #fff;
+  color: #666666;
   border-right: 1px solid rgba(0,0,0,.2);
 	box-shadow: 1px 0 0 rgba(255, 255, 255, 0.10);
 }
