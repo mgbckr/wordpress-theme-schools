@@ -1,0 +1,90 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #CCCCCC;
+}
+
+.header-area, .site-header, .site-branding {
+    background-color: #FFFFFF;
+    padding: 0px;
+}
+
+#content {
+    background-color: #FFFFFF;
+}
+
+@media(max-width:992px) {
+    .header-area, .site-header, .site-branding {
+        padding: 0px;
+    }
+
+    .site-branding {
+        margin-top: 0px;
+    }
+}
+
+@media (min-width: 992px) {
+    .site-branding {
+        width: initial;
+        float: none;
+    }
+
+    #logo {
+        text-align: center;
+    }
+}
+
+.navbar.navbar-default {
+    background-color: transparent;
+}
+
+.navbar.navbar-default .container {
+    background-color: #e4e4e4;
+}
+
+.navbar-default .navbar-nav > li > a {
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a {
+    border: none;
+}
+
+.navbar-default .navbar-nav > .open > a:focus {
+    border: none;
+}
+
+@media (min-width: 1200px)  {
+    .container {
+        width: 970px;
+    }
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+#content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+hr.section-divider:after {
+    content: "\f1ae \f1ae \f1ae";
+    width: 120px;
+}
+
+#colophon {
+    margin-top: 0px;
+    padding: 0px;
+    background-color:transparent;
+}
+
+footer .site-info {
+    background-color: #e4e4e4;
+    padding: 10px;
+    padding-right: 20px;
+}

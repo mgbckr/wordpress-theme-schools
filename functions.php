@@ -159,6 +159,7 @@ function schools_scripts() {
 	wp_enqueue_style( 'schools-icons', get_template_directory_uri().'/inc/css/font-awesome.min.css' );
 
 	wp_enqueue_style( 'schools-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'schools-style-custom', get_template_directory_uri() . '/inc/css/schools.css' );
 
 	wp_enqueue_script('schools-bootstrapjs', get_template_directory_uri().'/inc/js/bootstrap.min.js', array('jquery') );
 
