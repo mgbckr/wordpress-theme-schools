@@ -13,19 +13,19 @@ Tested up to: WP 4.6.1
 * License URI: http://www.gnu.org/licenses/gpl.html
 * Schools theme, Copyright 2016 https://martin-becker.net
 * Schools WordPress theme is distributed under the terms of the GNU GPL
-* Schools is based on Unite http://colorlib.com/wp/unite/, (C) 2014-2015 http://colorlib.com
+* Schools is based on schools http://colorlib.com/wp/schools/, (C) 2014-2015 http://colorlib.com
 
 #Credits#
 
-Schools is based on [Unite](http://colorlib.com/wp/unite/).
+Schools is based on [schools](http://colorlib.com/wp/schools/).
 
 #Description#
 
-Schools is based on [Unite](http://colorlib.com/wp/unite/), a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. And is used for a elementary school webpage. 
+Schools is based on [schools](http://colorlib.com/wp/schools/), a clean, modern and fully responsive WordPress wedding theme built using Bootstrap 3 which makes it optimized for tablets and mobile. And is used for a elementary school webpage. 
 
 #Documentation#
 
-Theme documentation is available on http://colorlib.com/wp/support/unite
+Theme documentation is available on http://colorlib.com/wp/support/schools
 
 #Changelog#
 

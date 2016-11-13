@@ -4,7 +4,7 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package unite
+ * @package schools
  */
 ?>
             </div><!-- row -->
@@ -14,13 +14,13 @@
 		<div class="site-info container">
 			<div class="row">
 				<nav role="navigation" class="col-md-6">
-					<?php unite_footer_links(); ?>
+					<?php schools_footer_links(); ?>
 				</nav>
 
 				<div class="copyright col-md-6">
-					<?php do_action( 'unite_credits' ); ?>
-					<?php echo of_get_option( 'custom_footer_text', 'unite' ); ?>
-					<?php do_action( 'unite_footer' ); ?>
+					<?php do_action( 'schools_credits' ); ?>
+					<?php echo of_get_option( 'custom_footer_text', 'schools' ); ?>
+					<?php do_action( 'schools_footer' ); ?>
 				</div>
 			</div>
 		</div><!-- .site-info -->

@@ -12,40 +12,40 @@
 	<?php endif; // End header image check. ?>
 
  *
- * @package unite
+ * @package schools
  */
 
 /**
  * Setup the WordPress core custom header feature.
  *
- * @uses unite_header_style()
- * @uses unite_admin_header_style()
- * @uses unite_admin_header_image()
+ * @uses schools_header_style()
+ * @uses schools_admin_header_style()
+ * @uses schools_admin_header_image()
  *
- * @package unite
+ * @package schools
  */
-function unite_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'unite_custom_header_args', array(
+function schools_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'schools_custom_header_args', array(
 		'default-image'				=> '',
 		'default-text-color'		=> '000000',
 		'width'						=> 450,
 		'height'					=> 150,
 		'flex-height'				=> true,
 		'flex-width'				=> true,	
-		'wp-head-callback'			=> 'unite_header_style',
-		'admin-head-callback'		=> 'unite_admin_header_style',
-		'admin-preview-callback'	=> 'unite_admin_header_image',
+		'wp-head-callback'			=> 'schools_header_style',
+		'admin-head-callback'		=> 'schools_admin_header_style',
+		'admin-preview-callback'	=> 'schools_admin_header_image',
 	) ) );
 }
-add_action( 'after_setup_theme', 'unite_custom_header_setup' );
+add_action( 'after_setup_theme', 'schools_custom_header_setup' );
 
-if ( ! function_exists( 'unite_header_style' ) ) :
+if ( ! function_exists( 'schools_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see unite_custom_header_setup().
+ * @see schools_custom_header_setup().
  */
-function unite_header_style() {
+function schools_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -78,15 +78,15 @@ function unite_header_style() {
 	</style>
 	<?php
 }
-endif; // unite_header_style
+endif; // schools_header_style
 
-if ( ! function_exists( 'unite_admin_header_style' ) ) :
+if ( ! function_exists( 'schools_admin_header_style' ) ) :
 /**
  * Styles the header image displayed on the Appearance > Header admin panel.
  *
- * @see unite_custom_header_setup().
+ * @see schools_custom_header_setup().
  */
-function unite_admin_header_style() {
+function schools_admin_header_style() {
 ?>
 	<style type="text/css">
 		.appearance_page_custom-header #headimg {
@@ -106,15 +106,15 @@ function unite_admin_header_style() {
 	</style>
 <?php
 }
-endif; // unite_admin_header_style
+endif; // schools_admin_header_style
 
-if ( ! function_exists( 'unite_admin_header_image' ) ) :
+if ( ! function_exists( 'schools_admin_header_image' ) ) :
 /**
  * Custom header image markup displayed on the Appearance > Header admin panel.
  *
- * @see unite_custom_header_setup().
+ * @see schools_custom_header_setup().
  */
-function unite_admin_header_image() {
+function schools_admin_header_image() {
 	$style = sprintf( ' style="color:#%s;"', get_header_textcolor() );
 ?>
 	<div id="headimg">
@@ -126,4 +126,4 @@ function unite_admin_header_image() {
 	</div>
 <?php
 }
-endif; // unite_admin_header_image
+endif; // schools_admin_header_image

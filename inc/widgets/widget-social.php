@@ -2,19 +2,19 @@
 
 /**
  * Social  Widget
- * Unite Theme
+ * Schools Theme
  */
-class unite_social_widget extends WP_Widget
+class schools_social_widget extends WP_Widget
 {
     function __construct(){
 
-       $widget_ops = array('classname' => 'unite-social','description' => esc_html__( "Unite Social Widget" ,'unite') );
-       parent::__construct('unite-social', esc_html__('Unite Social Widget','unite'), $widget_ops);
+       $widget_ops = array('classname' => 'schools-social','description' => esc_html__( "Schools Social Widget" ,'schools') );
+       parent::__construct('schools-social', esc_html__('Schools Social Widget','schools'), $widget_ops);
     }
 
     function widget($args , $instance) {
     	extract($args);
-        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'unite');
+        $title = isset($instance['title']) ? $instance['title'] : esc_html__('Follow us' , 'schools');
 
         echo $before_widget;
         echo $before_title;
@@ -28,7 +28,7 @@ class unite_social_widget extends WP_Widget
         <!-- social icons -->
         <div class="social-icons sticky-sidebar-social">
 
-            <?php unite_social_icons(); ?>
+            <?php schools_social_icons(); ?>
 
         </div><!-- end social icons --><?php
 
@@ -36,9 +36,9 @@ class unite_social_widget extends WP_Widget
     }
 
     function form($instance) {
-      if(!isset($instance['title'])) $instance['title'] = esc_html__('Follow us' , 'unite'); ?>
+      if(!isset($instance['title'])) $instance['title'] = esc_html__('Follow us' , 'schools'); ?>
 
-      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','unite') ?></label>
+      <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php esc_html_e('Title ','schools') ?></label>
 
       <input type="text" value="<?php echo esc_attr($instance['title']); ?>"
                           name="<?php echo $this->get_field_name('title'); ?>"

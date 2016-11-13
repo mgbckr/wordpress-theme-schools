@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package unite
+ * @package schools
  */
 
 get_header(); ?>
@@ -34,7 +34,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php unite_paging_nav(); ?>
+			<?php schools_paging_nav(); ?>
 
 		<?php else : ?>
 
