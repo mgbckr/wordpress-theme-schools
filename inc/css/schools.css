@@ -35,6 +35,11 @@ body {
     #logo {
         text-align: center;
     }
+
+    #main {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
 }
 
 .navbar.navbar-default {

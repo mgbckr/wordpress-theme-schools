@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full-width(no sidebar)
+ * Template Name: Full-width (no sidebar)
  *
  * This is the template that displays full width page without sidebar
  *

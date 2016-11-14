@@ -1,18 +1,16 @@
 <?php
 /**
- * The template for displaying all pages.
+ * Template Name: Sidebar (right)
  *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site will use a
- * different template.
+ * This is the template that displays a sidebar on the right hand side of the page.
+ * In Unite, the parent template, this was the default.
  *
  * @package schools
  */
 
 get_header(); ?>
 
-<div id="primary" class="content-area col-sm-12 col-md-12">
+<div id="primary" class="content-area col-sm-12 col-md-8 <?php echo of_get_option( 'site_layout' ); ?>">
 	<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -31,4 +29,5 @@ get_header(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
