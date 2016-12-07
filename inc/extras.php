@@ -197,7 +197,7 @@ function schools_setPostViews($postID) {
  * function to show the footer info, copyright information
  */
 function schools_footer_info() {
-   printf( esc_html__( '%1$s powered by %2$s', 'schools' ) , '<a title="Schools Theme" href="http://colorlib.com/wp/schools/" target="_blank">Schools Theme</a>', '<a href="http://wordpress.org/" target="_blank" title="WordPress">WordPress</a>');
+   printf( esc_html__( 'powered by %1$s and %2$s', 'schools' ) , '<a title="Schools Theme" href="https://github.com/mgbckr/wordpress-theme-schools" target="_blank">Schools Theme</a>', '<a href="http://wordpress.org/" target="_blank" title="WordPress">WordPress</a>');
 }
 add_action( 'schools_footer', 'schools_footer_info', 30 );
 
